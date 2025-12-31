@@ -41,15 +41,15 @@ const App = () => {
           { length: endIndex - startIndex },
           (_, i) => startIndex + i
         ).map((index) => (
-          <p
+          <div
             key={index}
-            style={{
-              height: `${itemHeight}px`,
-              margin: 0
-            }}
+            style={{ height: `${itemHeight}px` }}
           >
-            Lorem ipsum dolor sit amet.
-          </p>
+            <h2 style={{ margin: 0 }}>
+              Item {index}
+            </h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
         ))}
 
         {/* Bottom spacer */}
