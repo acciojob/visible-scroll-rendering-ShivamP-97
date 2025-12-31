@@ -34,7 +34,10 @@ const App = () => {
           overflow: "auto"
         }}
       >
-        {/* Top spacer */}
+        {/* */}
+        <p>Start Index: {startIndex}</p>
+
+        {/* */}
         <div style={{ height: startIndex * itemHeight }} />
 
         {Array.from(
@@ -48,16 +51,15 @@ const App = () => {
               margin: 0
             }}
           >
-            Item {index + 1}
+            Item {index}
           </h2>
         ))}
 
-        {/* Bottom spacer */}
+        {/* */}
         <div
           style={{
             height:
-              (TOTAL_ITEMS - endIndex) *
-              itemHeight
+              (TOTAL_ITEMS - endIndex) * itemHeight
           }}
         />
       </div>
