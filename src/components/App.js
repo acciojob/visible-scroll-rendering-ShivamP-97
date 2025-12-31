@@ -34,28 +34,25 @@ const App = () => {
           overflow: "auto"
         }}
       >
-        {/* */}
-        <p>Start Index: {startIndex}</p>
-
-        {/* */}
+        {/* Top spacer */}
         <div style={{ height: startIndex * itemHeight }} />
 
         {Array.from(
           { length: endIndex - startIndex },
           (_, i) => startIndex + i
         ).map((index) => (
-          <h2
+          <p
             key={index}
             style={{
               height: `${itemHeight}px`,
               margin: 0
             }}
           >
-            Item {index}
-          </h2>
+            Lorem ipsum dolor sit amet.
+          </p>
         ))}
 
-        {/* */}
+        {/* Bottom spacer */}
         <div
           style={{
             height:
